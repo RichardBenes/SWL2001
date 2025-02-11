@@ -66,7 +66,7 @@ extern "C" {
 #endif
 
 #ifndef MODEM_HAL_DBG_TRACE_RP
-#define MODEM_HAL_DBG_TRACE_RP                            MODEM_HAL_FEATURE_OFF
+#define MODEM_HAL_DBG_TRACE_RP                            MODEM_HAL_FEATURE_ON
 #endif
 
 #ifndef MODEM_HAL_DEEP_DBG_TRACE
