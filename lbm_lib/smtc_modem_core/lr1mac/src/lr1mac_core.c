@@ -190,8 +190,9 @@ lr1mac_states_t lr1mac_core_process( lr1_stack_mac_t* lr1_mac_obj )
         if( ( lr1_mac_obj->join_status == JOINING ) &&
             ( ( int32_t ) ( lr1_mac_obj->next_time_to_join_seconds - smtc_modem_hal_get_time_in_s( ) ) > 0 ) )
         {
-            SMTC_MODEM_HAL_TRACE_PRINTF( "TOO SOON TO JOIN time is  %d time target is : %d\n",
-                                         smtc_modem_hal_get_time_in_s( ), lr1_mac_obj->next_time_to_join_seconds );
+            // SMTC_MODEM_HAL_TRACE_PRINTF( "TOO SOON TO JOIN time is  %d time target is : %d\n",
+            //                              smtc_modem_hal_get_time_in_s( ), lr1_mac_obj->next_time_to_join_seconds );
+            SMTC_MODEM_HAL_TRACE_PRINTF(".", smtc_modem_hal_get_time_in_s( ), lr1_mac_obj->next_time_to_join_seconds);
             lr1_mac_obj->lr1mac_state = LWPSTATE_IDLE;
         }
     }

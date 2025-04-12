@@ -520,7 +520,8 @@ void rp_callback( radio_planner_t* rp )
                 SMTC_MODEM_HAL_PANIC_ON_FAILURE(
                     ral_set_sleep( &( rp->radio_target_attached_to_this_hook[i]->ral ), true ) == RAL_STATUS_OK );
             }
-            SMTC_MODEM_HAL_TRACE_PRINTF( " radio planner it but no more task activated\n" );
+            // SMTC_MODEM_HAL_TRACE_PRINTF( " radio planner it but no more task activated\n" );
+            SMTC_MODEM_HAL_TRACE_PRINTF( "n" );
         }
 
         smtc_modem_hal_set_ant_switch( false );
@@ -1208,6 +1209,7 @@ static void rp_consumption_statistics_updated( radio_planner_t* rp, const uint8_
 
 void rp_radio_irq_callback( void* obj )
 {
+    SMTC_MODEM_HAL_TRACE_PRINTF("c");
     radio_planner_t* rp                        = ( ( radio_planner_t* ) obj );
     rp->radio_irq_flag                         = true;
     rp->irq_timestamp_ms[rp->radio_task_id]    = smtc_modem_hal_get_time_in_ms( );
