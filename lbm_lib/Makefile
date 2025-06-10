@@ -124,34 +124,34 @@ clean_all:
 	-rm -rf $(BUILD_ROOT)
 
 clean_sx128x:
-	$(MAKE) clean_target RADIO=sx128x
+	"$(MAKE)" clean_target RADIO=sx128x
 
 clean_lr1110:
-	$(MAKE) clean_target RADIO=lr1110
+	"$(MAKE)" clean_target RADIO=lr1110
 
 clean_lr1120:
-	$(MAKE) clean_target RADIO=lr1120
+	"$(MAKE)" clean_target RADIO=lr1120
 
 clean_lr1121:
-	$(MAKE) clean_target RADIO=lr1121
+	"$(MAKE)" clean_target RADIO=lr1121
 
 clean_sx1261:
-	$(MAKE) clean_target RADIO=sx1261
+	"$(MAKE)" clean_target RADIO=sx1261
 
 clean_sx1262:
-	$(MAKE) clean_target RADIO=sx1262
+	"$(MAKE)" clean_target RADIO=sx1262
 
 clean_sx1268:
-	$(MAKE) clean_target RADIO=sx1268
+	"$(MAKE)" clean_target RADIO=sx1268
 
 clean_sx1272:
-	$(MAKE) clean_target RADIO=sx1272
+	"$(MAKE)" clean_target RADIO=sx1272
 
 clean_sx1276:
-	$(MAKE) clean_target RADIO=sx1276
+	"$(MAKE)" clean_target RADIO=sx1276
 
 clean:
-	$(MAKE) clean_target
+	"$(MAKE)" clean_target
 
 #-----------------------------------------------------------------------------
 # Compilation
@@ -187,32 +187,32 @@ endif
 endif
 endif
 endif
-	$(MAKE) basic_modem_build
+	"$(MAKE)" basic_modem_build
 endif
 
 basic_modem_sx128x:
-	$(MAKE) basic_modem RADIO=sx128x $(MTHREAD_FLAG)
+	"$(MAKE)" basic_modem RADIO=sx128x $(MTHREAD_FLAG)
 
 basic_modem_lr1110:
-	$(MAKE) basic_modem RADIO=lr1110 $(MTHREAD_FLAG)
+	"$(MAKE)" basic_modem RADIO=lr1110 $(MTHREAD_FLAG)
 
 basic_modem_lr1120:
-	$(MAKE) basic_modem RADIO=lr1120 $(MTHREAD_FLAG)
+	"$(MAKE)" basic_modem RADIO=lr1120 $(MTHREAD_FLAG)
 
 basic_modem_lr1121:
-	$(MAKE) basic_modem RADIO=lr1121 $(MTHREAD_FLAG)
+	"$(MAKE)" basic_modem RADIO=lr1121 $(MTHREAD_FLAG)
 
 basic_modem_sx1261:
-	$(MAKE) basic_modem RADIO=sx1261 $(MTHREAD_FLAG)
+	"$(MAKE)" basic_modem RADIO=sx1261 $(MTHREAD_FLAG)
 
 basic_modem_sx1262:
-	$(MAKE) basic_modem RADIO=sx1262 $(MTHREAD_FLAG)
+	"$(MAKE)" basic_modem RADIO=sx1262 $(MTHREAD_FLAG)
 
 basic_modem_sx1268:
-	$(MAKE) basic_modem RADIO=sx1268 $(MTHREAD_FLAG)
+	"$(MAKE)" basic_modem RADIO=sx1268 $(MTHREAD_FLAG)
 
 basic_modem_sx1272:
-	$(MAKE) basic_modem RADIO=sx1272 $(MTHREAD_FLAG)
+	"$(MAKE)" basic_modem RADIO=sx1272 $(MTHREAD_FLAG)
 
 basic_modem_sx1276:
-	$(MAKE) basic_modem RADIO=sx1276 $(MTHREAD_FLAG)
+	"$(MAKE)" basic_modem RADIO=sx1276 $(MTHREAD_FLAG)
